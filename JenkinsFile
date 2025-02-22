@@ -3,7 +3,7 @@ pipeline {
           jdk 'JAVA-HOME'
           maven 'M2-HOME-WIN'
         }
-    agent {label 'winslave'}
+    agent {label 'winslaveMaster'}
     stages {
         stage('checkout') {
             steps {
